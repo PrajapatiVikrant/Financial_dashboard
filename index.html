@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="dashboard_header">
+            <h1>Finance Dashboard</h1>
+        </header>
+        <section class="main">
+            <aside>
+                <article id="dashboard" class="sidebar-item active" tabindex="0" aria-current="page">
+                    <i class="fa-solid fa-grip sidebar-icon" aria-hidden="true"></i>
+                    <span class="sidebar-label">Dashboard</span>
+                </article>
+                <article id="transactions" class="sidebar-item" tabindex="0">
+                    <i class="fa-solid fa-money-bill-transfer sidebar-icon" aria-hidden="true"></i>
+                    <span class="sidebar-label">Transaction</span>
+                </article>
+                <article id="setting" class="sidebar-item" tabindex="0">
+                    <i class="fa-solid fa-gear sidebar-icon" aria-hidden="true"></i>
+                    <span class="sidebar-label">Settings</span>
+                </article>
+            </aside>
+            <main id="main">
+                <!-- Dynamically filled by JS -->
+            </main>
+        </section>
+    </div>
+    <!-- Toasts -->
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
